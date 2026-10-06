@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    background: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    min-height: 520px;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eef2ff;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    text-decoration: underline;
+}
+
+.hero-text > p:not(.tag) {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background: #172033;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.dashboard-card {
+    width: 300px;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.progress {
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.progress div {
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+    background: #172033;
+}
+
+.features {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.features h2,
+.career h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.card {
+    width: 30%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.career {
+    padding: 70px 10%;
+    text-align: center;
+    background: #eef2ff;
+}
+
+.career-box {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+}
+
+.career-box h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.career-box p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.skills {
+    margin-top: 25px;
+}
+
+.skills span {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 5px;
+    background: #eef2ff;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #172033;
+    color: white;
+}
+
+@media (max-width: 800px) {
+
+    .hero {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
